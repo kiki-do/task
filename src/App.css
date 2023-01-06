@@ -1,6 +1,24 @@
 .App {
   text-align: center;
+  
 
+}
+
+.button{
+  position: absolute;
+  bottom: 200px;
+  left: 900px;
+  background: rgb(95, 38, 160);
+			color: white;
+			padding: 15px 35px;
+			border-radius: 15px;
+			border: none;
+}
+
+.button:hover{
+ box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+				transition: 0.5s all ease;
+				cursor: pointer;
 }
 
 .App-logo {

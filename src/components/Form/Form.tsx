@@ -37,9 +37,10 @@ export const Form: FormComponent = ({ items, setItems }) => {
 	);
 
 	useEffect(() => {
-		if (phoneError || nameError || emailError) setFormValid(false);
+		if (phoneError || nameError || emailError || messageError)
+			setFormValid(false);
 		else setFormValid(true);
-	}, [phoneError, nameError, emailError]);
+	}, [phoneError, nameError, emailError, messageError]);
 
 	const addItem = () => {
 		(async () => {
@@ -110,7 +111,7 @@ export const Form: FormComponent = ({ items, setItems }) => {
 	const messageValidateHandler = (event: ChangeEvent<HTMLInputElement>) => {
 		setMessage(event.target.value);
 		const regMessageValidate = message;
-		if (regMessageValidate.length === 0) {
+		if (regMessageValidate.length < 0) {
 			setMessageError("Ошибка при вводе сообщения");
 		} else {
 			setMessageError("");
