@@ -15,9 +15,13 @@ export const Message: FC = () => {
 
 	useEffect(() => {
 		const fetchItems = async () => {
-			const responce = await fetch("http://localhost:3001/messages");
-			const data = await responce.json();
-			setItems(data);
+			try {
+				const responce = await fetch("http://localhost:3001/messages");
+				const data = await responce.json();
+				setItems(data);
+			} catch (err) {
+				console.log("error");
+			}
 		};
 
 		fetchItems();
