@@ -16,7 +16,9 @@ export const Message: FC = () => {
 	useEffect(() => {
 		const fetchItems = async () => {
 			try {
-				const responce = await fetch("http://localhost:3001/messages");
+				const responce = await fetch(
+					"https://my-json-server.typicode.com/kiki-do/jsonapi/messages"
+				);
 				const data = await responce.json();
 				setItems(data);
 			} catch (err) {
