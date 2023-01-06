@@ -1,0 +1,22 @@
+{
+	"messages": [
+		{
+			"id": 1,
+			"message": "hello",
+			"name": "Степа",
+			"email": "1223@mail.ru"
+		},
+		{
+			"id": 2,
+			"message": "hello",
+			"name": "Вася",
+			"email": "1223@mail.ru"
+		},
+		{
+			"id": 3,
+			"message": "hello",
+			"name": "Петя",
+			"email": "1223@mail.ru"
+		}
+	]
+}
