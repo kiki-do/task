@@ -45,7 +45,7 @@ export const Form: FormComponent = ({ items, setItems }) => {
 	const addItem = () => {
 		(async () => {
 			const rawResponse = await fetch(
-				"https://github.com/kiki-do/task/blob/master/public/db.json",
+				"https://gist.githubusercontent.com/kiki-do/4afc9b5d8ac50074ae448464a645ffb3/raw/255a1f85b9cbb6e7e8fe321f68fe8e538d3fcbe4/db.json",
 				{
 					method: "POST",
 					headers: {
