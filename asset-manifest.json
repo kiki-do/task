@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kiki-do/task.git/static/css/main.5275e4fc.css",
+    "main.js": "/kiki-do/task.git/static/js/main.a11a8d2d.js",
+    "static/js/787.76ffadc1.chunk.js": "/kiki-do/task.git/static/js/787.76ffadc1.chunk.js",
+    "index.html": "/kiki-do/task.git/index.html",
+    "main.5275e4fc.css.map": "/kiki-do/task.git/static/css/main.5275e4fc.css.map",
+    "main.a11a8d2d.js.map": "/kiki-do/task.git/static/js/main.a11a8d2d.js.map",
+    "787.76ffadc1.chunk.js.map": "/kiki-do/task.git/static/js/787.76ffadc1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5275e4fc.css",
+    "static/js/main.a11a8d2d.js"
+  ]
+}
