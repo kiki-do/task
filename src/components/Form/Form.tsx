@@ -44,14 +44,17 @@ export const Form: FormComponent = ({ items, setItems }) => {
 
 	const addItem = () => {
 		(async () => {
-			const rawResponse = await fetch("http://localhost:3001/messages", {
-				method: "POST",
-				headers: {
-					Accept: "application/json",
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify({ name: name, email: email, message: message }),
-			});
+			const rawResponse = await fetch(
+				"https://github.com/kiki-do/task/blob/master/public/db.json",
+				{
+					method: "POST",
+					headers: {
+						Accept: "application/json",
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify({ name: name, email: email, message: message }),
+				}
+			);
 			const content = await rawResponse.json();
 
 			console.log(content);
