@@ -16,9 +16,7 @@ export const Message: FC = () => {
 	useEffect(() => {
 		const fetchItems = async () => {
 			try {
-				const responce = await fetch(
-					"https://gist.githubusercontent.com/kiki-do/4afc9b5d8ac50074ae448464a645ffb3/raw/255a1f85b9cbb6e7e8fe321f68fe8e538d3fcbe4/db.json"
-				);
+				const responce = await fetch("http://localhost:3001/messages");
 				const data = await responce.json();
 				setItems(data);
 			} catch (err) {
