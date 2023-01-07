@@ -11,6 +11,7 @@ export interface IData {
 	email: string;
 }
 
+/*Компонент видимости удачных сообщении */
 export const Message: FC = () => {
 	const [items, setItems] = useState<IData[]>([]);
 

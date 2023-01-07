@@ -1,11 +1,10 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import classes from "./App.module.scss";
 
-import { Message } from "./components/Message/Message";
-import clsx from "clsx";
 import { Home } from "./pages/Home";
 
 const App = () => {
+	/*Состояние появления формы */
 	const [isActive, setIsActive] = useState(true);
 
 	const activeHandler = () => setIsActive(!isActive);

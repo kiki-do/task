@@ -11,6 +11,7 @@ export interface HomeProps {
 export interface HomeComponent extends FC<HomeProps> {}
 
 export const Home: HomeComponent = ({ isActive }) => {
+	/*Оптимизация рендера */
 	const wrapperClassName = useMemo(
 		() =>
 			clsx(classes.wrapper, {

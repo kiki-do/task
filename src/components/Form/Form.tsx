@@ -10,19 +10,24 @@ export interface formProps {
 
 export interface FormComponent extends FC<formProps> {}
 
+/*Компонент формы */
 export const Form: FormComponent = ({ items, setItems }) => {
+	/*Проверка на валидацию всей формы */
 	const [formValid, setFormValid] = useState<boolean>(false);
 
+	/*Поля инпутов */
 	const [name, setName] = useState<string>("");
 	const [phone, setPhone] = useState<string>("");
 	const [email, setEmail] = useState<string>("");
 	const [message, setMessage] = useState<string>("");
 
+	/*Проверка на заполненность инпута */
 	const [phoneDirty, setPhoneDirty] = useState<boolean>(false);
 	const [nameDirty, setNameDirty] = useState<boolean>(false);
 	const [emailDirty, setEmailDirty] = useState<boolean>(false);
 	const [messageDirty, setMessageDirty] = useState<boolean>(false);
 
+	/*Ошибка при неправильном оформлении */
 	const [phoneError, setPhoneError] = useState<string>(
 		"Номер должен быть обязательно заполнен"
 	);
@@ -42,6 +47,7 @@ export const Form: FormComponent = ({ items, setItems }) => {
 		else setFormValid(true);
 	}, [phoneError, nameError, emailError, messageError]);
 
+	/*Отправка формы */
 	const addItem = () => {
 		(async () => {
 			const rawResponse = await fetch("http://localhost:3001/messages", {
@@ -58,6 +64,7 @@ export const Form: FormComponent = ({ items, setItems }) => {
 		})();
 	};
 
+	/*Валидация если ячейка не заполена */
 	const blurHandler = (event: ChangeEvent<HTMLInputElement>) => {
 		switch (event.target.name) {
 			case "name":
@@ -78,6 +85,7 @@ export const Form: FormComponent = ({ items, setItems }) => {
 		}
 	};
 
+	/*Валидация каждого инпута через регулярные выражения */
 	const phoneValidateHandler = (event: ChangeEvent<HTMLInputElement>) => {
 		setPhone(event.target.value);
 		const regPhoneValidate = /^((\+7|7|8)+([0-9]){10})$/;
