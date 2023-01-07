@@ -45,7 +45,7 @@ export const Form: FormComponent = ({ items, setItems }) => {
 	const addItem = () => {
 		(async () => {
 			const rawResponse = await fetch(
-				"https://my-json-server.typicode.com/kiki-do/jsonapi/messages",
+				"https://63b8b9ad6f4d5660c6dd8d43.mockapi.io/task",
 				{
 					method: "POST",
 					headers: {

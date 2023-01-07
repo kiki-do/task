@@ -17,7 +17,7 @@ export const Message: FC = () => {
 		const fetchItems = async () => {
 			try {
 				const responce = await fetch(
-					"https://my-json-server.typicode.com/kiki-do/jsonapi/messages"
+					"https://63b8b9ad6f4d5660c6dd8d43.mockapi.io/task"
 				);
 				const data = await responce.json();
 				setItems(data);
