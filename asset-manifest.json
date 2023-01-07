@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kiki-do/task.git/static/css/main.5275e4fc.css",
-    "main.js": "/kiki-do/task.git/static/js/main.e057fc00.js",
-    "static/js/787.76ffadc1.chunk.js": "/kiki-do/task.git/static/js/787.76ffadc1.chunk.js",
-    "index.html": "/kiki-do/task.git/index.html",
-    "main.5275e4fc.css.map": "/kiki-do/task.git/static/css/main.5275e4fc.css.map",
-    "main.e057fc00.js.map": "/kiki-do/task.git/static/js/main.e057fc00.js.map",
-    "787.76ffadc1.chunk.js.map": "/kiki-do/task.git/static/js/787.76ffadc1.chunk.js.map"
+    "main.css": "/task/static/css/main.5275e4fc.css",
+    "main.js": "/task/static/js/main.8995a9de.js",
+    "static/js/787.76ffadc1.chunk.js": "/task/static/js/787.76ffadc1.chunk.js",
+    "index.html": "/task/index.html",
+    "main.5275e4fc.css.map": "/task/static/css/main.5275e4fc.css.map",
+    "main.8995a9de.js.map": "/task/static/js/main.8995a9de.js.map",
+    "787.76ffadc1.chunk.js.map": "/task/static/js/787.76ffadc1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5275e4fc.css",
-    "static/js/main.e057fc00.js"
+    "static/js/main.8995a9de.js"
   ]
 }
