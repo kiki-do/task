@@ -1,4 +1,5 @@
-import { FC, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import type { FC } from "react";
 import { Form } from "../Form/Form";
 import { MessageList } from "../MessageList/MessageList";
 import classes from "./Message.module.scss";
@@ -26,6 +27,7 @@ export const Message: FC = () => {
 
 		fetchItems();
 	}, []);
+
 	return (
 		<div className={classes.wrapper}>
 			<Form items={items} setItems={setItems} />

@@ -1,18 +1,20 @@
-import { useState } from "react";
-import "./App.scss";
+import { useMemo, useState } from "react";
+import classes from "./App.module.scss";
 
 import { Message } from "./components/Message/Message";
+import clsx from "clsx";
+import { Home } from "./pages/Home";
 
 const App = () => {
 	const [isActive, setIsActive] = useState(true);
 
 	const activeHandler = () => setIsActive(!isActive);
 	return (
-		<div>
+		<div className={classes.wrapper}>
 			<button className="button" onClick={activeHandler}>
 				{isActive ? "Закрыть форму" : "Открыть форму"}
 			</button>
-			{isActive && <Message />}
+			<Home isActive={isActive} />
 		</div>
 	);
 };
