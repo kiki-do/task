@@ -17,7 +17,7 @@ export const Message: FC = () => {
 		const fetchItems = async () => {
 			try {
 				const responce = await fetch(
-					"https://63b8b9ad6f4d5660c6dd8d43.mockapi.io/task"
+					"https://63b8b9ad6f4d5660c6dd8d43.mockapi.io/task1"
 				);
 				const data = await responce.json();
 				setItems(data);
