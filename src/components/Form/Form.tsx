@@ -44,17 +44,14 @@ export const Form: FormComponent = ({ items, setItems }) => {
 
 	const addItem = () => {
 		(async () => {
-			const rawResponse = await fetch(
-				"https://63b8b9ad6f4d5660c6dd8d43.mockapi.io/task1",
-				{
-					method: "POST",
-					headers: {
-						Accept: "application/json",
-						"Content-Type": "application/json",
-					},
-					body: JSON.stringify({ name: name, email: email, message: message }),
-				}
-			);
+			const rawResponse = await fetch("http://localhost:3001/messages", {
+				method: "POST",
+				headers: {
+					Accept: "application/json",
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify({ name: name, email: email, message: message }),
+			});
 			const content = await rawResponse.json();
 
 			console.log(content);

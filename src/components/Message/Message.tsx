@@ -16,9 +16,7 @@ export const Message: FC = () => {
 	useEffect(() => {
 		const fetchItems = async () => {
 			try {
-				const responce = await fetch(
-					"https://63b8b9ad6f4d5660c6dd8d43.mockapi.io/task1"
-				);
+				const responce = await fetch("http://localhost:3001/messages");
 				const data = await responce.json();
 				setItems(data);
 			} catch (err) {
